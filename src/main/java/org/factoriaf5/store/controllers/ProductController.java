@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
     @GetMapping("/health")
     public String check () {
-        return "Helo I´m a server";
+        return "Hello I´m a server";
     }
 }
