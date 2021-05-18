@@ -14,19 +14,18 @@ import java.util.List;
 @RestController
 public class ProductController {
     @GetMapping("/health")
-    public String check () { return "Hello I´m a server"; }
+    public String check() { return "Hello I´m a server"; }
 
     public List<Product> products = new ArrayList<>();
 
     @GetMapping("/products")
-    public ArrayList<Product> allProducts () {
+    public List<Product> allProducts(){
        return products;
    }
 
    @PostMapping("/products")
-    public RedirectView addNewProduct(Product product){
+    public void addNewProduct(Product product){
         products.add(product);
-        return new RedirectView("/products");
    }
 
 }
