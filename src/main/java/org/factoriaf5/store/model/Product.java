@@ -1,4 +1,4 @@
-package org.factoriaf5.store.model
+package org.factoriaf5.store.model;
 
 public class Product {
 
