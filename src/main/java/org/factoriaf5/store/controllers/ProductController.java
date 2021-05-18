@@ -24,6 +24,12 @@ public class ProductController {
         products.add(product);
    }
 
+    @GetMapping("/products/{name}")
+    @ResponseBody
+    public String getProductByName(@PathVariable String name) {
+        return "Name: " + name;
+    }
+
 }
 
 
