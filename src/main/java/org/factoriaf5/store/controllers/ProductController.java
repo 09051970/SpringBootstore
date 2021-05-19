@@ -27,7 +27,7 @@ public class ProductController {
     @GetMapping("/products/{name}")
     @ResponseBody
     public String getProductByName(@PathVariable String name) {
-        return "Name: " + name;
+        return "Name:" + name;
     }
 
 }
